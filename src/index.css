@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main {
+    height: 100vh;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+body {
+    margin: 0%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding : 3rem;
+    background-color: #E9EAED;
+}
+
+.title {
+    text-align: center;
+    margin: 0%;
+    font-size: 38px;
+}
+
+td.wrapper-left-slides {
+    height: 80vh;
+    /*background-color: grey;*/
+    filter: drop-shadow(0 0 0.50rem grey);
+    margin: 2rem 0rem 2rem 0rem;
+    float: left;
+    width: 25%;
+    padding: 0.5rem;
+
+}
+
+td.wrapper-main-slide {
+    height: 80vh;
+    background-color: white;
+    margin: 2rem 0rem 2rem 0rem;
+    float: right;
+    width: 70%;
+    padding: 0.5rem;
+    filter: drop-shadow(0 0 0.50rem grey);
+
+}
+
+.slide-card {
+    height: 30vh;
+    background-color: white;
+    margin-bottom: 1em;
+    transition: all .3s ease-in-out;
+}
+
+.slide-card:hover {
+    transform: scale(1.1);
+}
+
+.project {
+    height : 30vh;
+    width : 21%;
+    background-color: white;
+    margin: 1em;
+    float: left;
+    transition: all .3s ease-in-out;
+
+}
+
+.new-project {
+    height : 30vh;
+    width : 21%;
+    background-color: white;
+    margin: 1em;
+    float: left;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.project-wrapper {
+    margin-top: 10vh;
+}
+
+.project-title-show {
+    border : 1px solid black;
+    height: 100%;
+    vertical-align: baseline;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+.title-p {
+    border : 1px solid red;
+    font-size: 28px;
+    display: none;
+}
+
+.project-title-show:hover {
+    display: block;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gif {
+    height: 100%;
+}
+
+.project:hover, .new-project:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: grayscale(100%);
+
+}
