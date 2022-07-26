@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 
 .main {
     height: 100vh;
@@ -20,6 +21,8 @@ body {
     text-align: center;
     margin: 0%;
     font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    color : #00acee;
 }
 
 td.wrapper-left-slides {
@@ -106,6 +109,7 @@ td.wrapper-main-slide {
 
 .gif {
     height: 100%;
+    width: 100%;
 }
 
 .project:hover, .new-project:hover {
