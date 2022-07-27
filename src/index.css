@@ -4,117 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.main {
-  height: 100vh;
+header {
+  @apply relative z-50 border py-2 px-4 shadow;
 }
 
-.table-wrapper {
-  width: 100%;
-}
-body {
-  margin: 0%;
-  font-family: "Helvetica", "Arial", sans-serif;
-  padding: 3rem;
-  background-color: #e9eaed;
+header h1 {
+  @apply font-bold;
 }
 
-.title {
-  text-align: center;
-  margin: 0%;
-  font-size: 38px;
-  font-family: "Lato", sans-serif;
-  color: #00acee;
+main {
+  @apply p-4;
 }
 
-td.wrapper-left-slides {
-  height: 80vh;
-  /*background-color: grey;*/
-  filter: drop-shadow(0 0 0.5rem grey);
-  margin: 2rem 0rem 2rem 0rem;
-  float: left;
-  width: 25%;
-  padding: 0.5rem;
+input {
+  @apply rounded border bg-white py-1 px-2;
 }
 
-td.wrapper-main-slide {
-  height: 80vh;
-  background-color: white;
-  margin: 2rem 0rem 2rem 0rem;
-  float: right;
-  width: 70%;
-  padding: 0.5rem;
-  filter: drop-shadow(0 0 0.5rem grey);
-}
-
-.slide-card {
-  height: 30vh;
-  background-color: white;
-  margin-bottom: 1em;
-  transition: all 0.3s ease-in-out;
-}
-
-.slide-card:hover {
-  transform: scale(1.1);
-}
-
-.project {
-  height: 30vh;
-  width: 21%;
-  background-color: white;
-  margin: 1em;
-  float: left;
-  transition: all 0.3s ease-in-out;
-}
-
-.new-project {
-  height: 30vh;
-  width: 21%;
-  background-color: white;
-  margin: 1em;
-  float: left;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.project-wrapper {
-  margin-top: 10vh;
-}
-
-.project-title-show {
-  border: 1px solid black;
-  height: 100%;
-  vertical-align: baseline;
-  text-align: center;
-  display: none;
-  z-index: 1;
-}
-
-.title-p {
-  border: 1px solid red;
-  font-size: 28px;
-  display: none;
-}
-
-.project-title-show:hover {
-  display: block;
-}
-
-.thumbnail {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gif {
-  height: 100%;
-  width: 100%;
-}
-
-.project:hover,
-.new-project:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  filter: grayscale(100%);
+button {
+  @apply rounded bg-orange-600 py-1 px-2 font-bold text-white;
 }
 
 #app {
@@ -122,7 +29,7 @@ td.wrapper-main-slide {
 }
 
 .btn {
-  @apply py-2 px-4 text-sm font-bold w-32 min-w-0 bg-gray-200 rounded;
+  @apply w-32 min-w-0 rounded bg-gray-200 py-2 px-4 text-sm font-bold;
 }
 
 .btn.is-primary {
@@ -130,7 +37,7 @@ td.wrapper-main-slide {
 }
 
 .btn.has-icon {
-  @apply flex gap-1 items-center;
+  @apply flex items-center gap-1;
 }
 
 .btn.has-icon svg {

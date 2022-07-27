@@ -1,0 +1,43 @@
+#presentation-list-skeleton {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3;
+}
+
+#presentation-list-skeleton .presentation {
+  @apply aspect-video rounded border bg-white p-4 shadow;
+}
+
+#presentation-list-skeleton .presentation > div {
+  @apply mb-2 h-4 w-full rounded bg-gray-200;
+}
+
+#presentation-list-skeleton .presentation .title {
+  @apply h-6 w-full;
+}
+
+#presentation-list {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4;
+}
+
+#presentation-list .presentation {
+  @apply aspect-video rounded border bg-white p-4 shadow hover:bg-slate-200;
+}
+
+#presentation-list .presentation .title {
+  @apply mb-4 text-2xl font-bold;
+}
+
+#presentation-list .presentation .options {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+#new-presentation {
+  @apply mb-4 rounded border bg-white p-4 shadow;
+}
+
+#new-presentation .title {
+  @apply mb-4 text-2xl font-bold;
+}
+
+#new-presentation .form {
+  @apply flex flex-col gap-2;
+}
