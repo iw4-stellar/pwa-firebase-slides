@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100vh;
+}
+
+.Editor {
+  @apply flex flex-col h-full;
+}
+
+.Editor__header {
+  @apply flex justify-between py-4 px-8 border-b-2 border-b-orange-400;
+}
+
+.Editor__body {
+  @apply flex-1 p-4 bg-gray-200;
+}
+
+.SlideEditor {
+  @apply shadow flex-1 relative;
+}
+
+.ContentEditor__actions {
+  @apply mb-4;
+}
+
+.ql-toolbar,
+.ql-container {
+  @apply bg-white;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+  @apply border-0;
+}
+
+.ql-container {
+}
+
+.reveal {
+  @apply shadow;
+}
